@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cars</title>
+<script src="validation.js"></script>
+<style>
+ 
+
+.formarea
+{
+background-color:grey;
+color:white;
+ text-align:center;
+}
+.subt{
+padding-left:20px;
+padding-right:20px;
+margin-top:30px;
+
+}
+.ipt{
+margin-top:20px;
+}
+.slis{
+margin-top:20px;
+}
+
+</style>
+</head>
+<body>
+ <div>
+ 
+ <div class="formarea">
+ <h2> Enter all the required informtion here!</h2>
+ <form action ="info.php" method = "post">
+ Seller Name:
+ <input name = "name"type="text" class="ipt" value="" required><br>
+ Address:
+ <input name = "address" type="text" class="ipt" value="" required><br>
+  City:
+ <input name = "city" type="text" class="ipt" value="" required><br>
+  Phone Number:
+ <input name = "phone_number" type="text" class="ipt" name="pn" value="" pattern="^^[\(]{0,1}\d{3}[\)/-]{1}\d{3}-\d{4}$" required><br>
+  Email Address:
+  <input name = "email" type="email" class="ipt" name="emname" value="" required><br>
+ 
+  <span>
+ 
+  vehical Make:
+ <input  name = "make" type="text" class="slis" value="" required> </span><br>
+  <span> vehical Model:
+ <input  name = "model" type="text" class="slis" value="" required></span><br>
+   <span>  vehical Year:
+ <input name = "year" type="text" class="slis" value="" required></span><br>
+ 
+ <br>
+ <input type="submit" name="submit" class="subt" value="Submit" />
+  </form>
+ </div>
+ 
+
+ 
+
+ 
+</body> 
+</html>        
